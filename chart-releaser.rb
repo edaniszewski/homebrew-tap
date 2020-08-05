@@ -2,16 +2,16 @@
 class ChartReleaser < Formula
   desc "CI tool for automating Helm Chart version bumps on new app release"
   homepage "https://github.com/edaniszewski/chart-releaser"
-  version "0.1.1"
+  version "0.1.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/edaniszewski/chart-releaser/releases/download/0.1.1/chart-releaser_darwin_amd64.tar.gz"
-    sha256 "b392402914802738c6601426427b5e95758fe53079e4cd9d5c32de036569ef42"
+    url "https://github.com/edaniszewski/chart-releaser/releases/download/0.1.2/chart-releaser_darwin_amd64.tar.gz"
+    sha256 "d19dbde054ccc532390ad7c8bdba15871d5fe0ec00dd92d647144f69cd51c87d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/edaniszewski/chart-releaser/releases/download/0.1.1/chart-releaser_linux_amd64.tar.gz"
-      sha256 "d644b5cde8a6b84eb29041e8c3c6cd3669dc6295877974f94f0d6fbb3a918e12"
+      url "https://github.com/edaniszewski/chart-releaser/releases/download/0.1.2/chart-releaser_linux_amd64.tar.gz"
+      sha256 "691a60c6c3289cf22825a5509e8df9f4265ffb0b4f4a68dfe128e7229407a8a3"
     end
   end
 
